@@ -1,20 +1,164 @@
 <!DOCTYPE html> 
 <html>
-  <title>
-    restaurant bussiness ideas
-  </title>
-  <body style="background-color:skyblue">
-    <hr>
-    <h1 align="center" style="background-color:pink"> Do you want to start a restaurant bussiness or cafe? But you are not even know basics about it?
-    </h1>
-    <hr>
-   <p style="color:purple"> <h3> <b><u>Here are the details for you:</u></b></h3> <br>
-    1. To start a restaurant or cafe business you actually need is investment, for the rent or buying the site. <br>
-    2. You should select the suitable area for your type of restuarant or cafe, where the people comes frequently (like a crowded area), so that more people could know about your restaurant or cafe and more people will come to your restaurant or cafe. <br>
-    3. The next thing is the inner and outer appearance of your retaurant or cafe. The infrastructure and furniture should attract the people.<br>
-    4. And the next thing is Menu, the menu list should also attractive. <br>
-    5. Next important thing is the way the bearers treat the customers. we should make the customers feel comfort and enjoy the meals or others.<br>
-    6. And you should conduct speical events or party in your restaurant on special days and some discounts to attract the people to your retaurant or cafe.<br>
-   <h4 style="color:navy"> 👆 These are the basic things You should know to start a restuarant or cafe.</h4></p> 
-  </body>
-</html>
+    <head>
+        <title>KPHN Webby</title>
+  <style>
+      
+ body {
+    margin:0;
+    font-family: 'Segoe UI', sans-serif;
+    background-image:url('butterfly.jpg');
+    color:white;
+    padding:40px;
+    }
+
+ h1 {
+     text-align:center;
+     text-color:pink;
+     text-shadow: 2px 2px 4px black;
+     margin-bottom: 30px;
+     }
+     
+     h2 {
+     text-align:center;
+     text-color:white;
+     text-shadow: 2px 0 0 white;
+     margin-bottom: 30px;
+     }
+     
+     h3 {
+     text-align:center;
+     text-color:black;
+     text-shadow: 2px 4px 4px gray;
+     margin-bottom: 30px;
+     }
+
+.gallery-box {
+    max-width:600px;
+    margin:auto;
+    background-color:;
+    padding:10px;
+    border-radius: 20px;
+    box-shadow: 5px 10px 20px white;
+    position:relative;
+    overflow:hidden;
+    }
+
+.gallery-box h2{
+color:pink;
+text-align:center;
+margin-bottom:10px;
+}
+
+.gallery-container{
+display:flex;
+overflow-x:auto;
+scroll-behavior:smooth;
+}
+.gallery-container img{
+width:150px;
+margin-right:15px;
+border-radius: 10px;
+box-shadow: 0 4px 8px gray;
+transition: transform 0.3s;
+}
+
+.gallery-container img: hover{
+transform:scale(1.05);
+}
+
+.scroll-btn{
+position:absolute;
+top:50%;
+transform:translateY(-50%);
+background-color:lightgray;
+color:black;
+font-size:24px;
+padding:10px;
+cursor:pointer;
+border-radius:50%;
+}
+
+.scroll-btn:hover{
+background-color:blue;
+}
+
+.scroll-left{
+left:10px;
+}
+
+.scroll-right{
+right:10px;
+}
+
+
+ul { 
+    color:white;
+    font-size:bold;
+    background-color:darkpink;
+    text-shadow: 2px 0 2px black;
+    box-shadow: 2px 2px 4px white;
+    border-left: 5px solid white;
+    border-radius:10px;
+    }
+    
+    .info { 
+        align-items:left;
+        background-color:white;
+    }
+    
+</style>
+ </head>
+<body>
+    <marquee style="color:black">welcome to the family (KPHN)</marquee>
+    <h1> KPHN's block </h1>
+    
+     <ul> Members of our family :
+<li> nithya sri (younger daughter)</li>
+<li>himasri (elder daughter)</li>
+<li>pallavi (mother)</li>
+<li>kishore (father)</li>
+</ul> 
+
+<div class="gallery-box">
+<h2> 🩷 Family Gallery</h2>
+
+<button class="scroll-btnscroll-left" onclick="ScrollGallery(-320)"> &#8592; </button>
+
+
+<div class="gallery-container" id="gallery">
+    
+ <img src="neethu.jpg" >
+<img src="ammu.jpg" >
+<img src="sreelu.jpg" >
+<img src="kishore.jpg" >
+</div>
+
+<button class="scroll-btnscroll-right" onclick="ScrollGallery(320)"> &#8594; </button>
+</div>
+
+
+<div class="scrolling-strip">
+<img src=" ">
+<img src=" ">
+<img src=" ">
+<img src=" ">
+</div>
+
+<script> 
+
+  function scrollGallery(amount) { 
+  const gallery = document.getElementbyId("gallery");
+        gallery.scrollBy({left: amount, behavior:"smooth"});
+}
+</script>
+
+<h3>Cute Memories</h3>
+ <section class="info">
+     <table border="2" style="border-collapse:collapse"> 
+    <tr> <td> <video src="ammu.mp4" width="200" height="200" controls>...</video></td> <td> <video src="neethudance.mp4" width="200" height="200" controls>...</video></td></tr>
+    <tr><td><video src="neethu.mp4" width="200" height="200" controls>...</video></td> <td><video src="kphn.mp4" width="200" height="200" controls>...</video></td></tr>
+      </section>
+
+</body>
+   </html>
